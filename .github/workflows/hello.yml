@@ -9,10 +9,10 @@ jobs:
         steps:
             - name: "RX Print hello on ubu"
               run: echo "Hello Riox"
-    say_hello_on_windows:
+    getdate_on_windows:
         runs-on: windows-latest
         steps:
-            - name: RX Print hello on win
+            - name: RX Get date on win
               run: get-date
-              
+
 
