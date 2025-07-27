@@ -4,8 +4,15 @@ on:
     workflow_dispatch
 
 jobs:
-    say_hello_job:
+    say_hello_ubuntu:
         runs-on: ubuntu-latest
         steps:
-            - name: "RX Print hello"
+            - name: "RX Print hello on ubu"
               run: echo "Hello Riox"
+    say_hello_on_windows:
+        runs-on: windows-latest
+        steps:
+            - name: RX Print hello on win
+              run: get-date
+              
+
