@@ -1,0 +1,11 @@
+name: "Hello Riox"
+
+on:
+    workflow_dispatch
+
+jobs:
+    say_hello_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "print hello"
+              run: echo "Hello Riox"
