@@ -7,5 +7,5 @@ jobs:
     say_hello_job:
         runs-on: ubuntu-latest
         steps:
-            - name: "print hello"
+            - name: "RX Print hello"
               run: echo "Hello Riox"
