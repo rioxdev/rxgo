@@ -1,0 +1,17 @@
+name: Hello Wednesday
+
+on:
+  schedule:
+    - cron: '0 6 * * 3'   # Tous les mercredis à 06h00 UTC
+    - cron: '0 14 * * 3'  # Tous les mercredis à 14h00 UTC
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "Hello Mercredi"
+
+      - name: Show current time (UTC)
+        run: date -u
