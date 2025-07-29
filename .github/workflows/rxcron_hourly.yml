@@ -1,0 +1,16 @@
+name: Hello Hourly
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Toutes les heures, tous les jours (UTC)
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "Hello toutes les heures"
+
+      - name: Show current time (UTC)
+        run: date -u
