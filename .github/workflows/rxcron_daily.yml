@@ -2,7 +2,7 @@ name: Hello Scheduled daily
 
 on:
   schedule:
-    - cron: '0 20 * * 1-5'  # Tous les jours de semaine à 20h UTC
+    - cron: '0 21 * * 1-5'  # Tous les jours de semaine à 21h UTC
   workflow_dispatch:        # Permet de le lancer manuellement si besoin
 
 jobs:
