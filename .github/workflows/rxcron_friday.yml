@@ -1,0 +1,13 @@
+name: Hello Friday
+
+on:
+  schedule:
+    - cron: '0 20 * * 5'  # Tous les vendredis à 20h UTC
+  workflow_dispatch:      # Optionnel : permet un déclenchement manuel
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "Hello Friday"

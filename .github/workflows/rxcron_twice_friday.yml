@@ -1,0 +1,17 @@
+name: Hello Friday
+
+on:
+  schedule:
+    - cron: '0 6 * * 5'   # Tous les vendredis à 06h00 UTC
+    - cron: '0 15 * * 5'  # Tous les vendredis à 15h00 UTC
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "Hello Friday twice"
+
+      - name: Show current time (UTC)
+        run: date -u
